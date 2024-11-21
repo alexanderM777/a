@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_Registro_Clinico", "API_Registro_Clinico.csproj", "{CC67B77F-33A3-457C-BF97-66E96F31934E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedModels", "..\SharedModels\SharedModels.csproj", "{5752EDF1-EED6-4E66-BA7F-43DDDA30CDAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC67B77F-33A3-457C-BF97-66E96F31934E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC67B77F-33A3-457C-BF97-66E96F31934E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC67B77F-33A3-457C-BF97-66E96F31934E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC67B77F-33A3-457C-BF97-66E96F31934E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5752EDF1-EED6-4E66-BA7F-43DDDA30CDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5752EDF1-EED6-4E66-BA7F-43DDDA30CDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5752EDF1-EED6-4E66-BA7F-43DDDA30CDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5752EDF1-EED6-4E66-BA7F-43DDDA30CDAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3D095B3-F1FB-4E41-8893-EA550C3282DF}
+	EndGlobalSection
+EndGlobal

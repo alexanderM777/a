@@ -1,0 +1,47 @@
+﻿@model IEnumerable<SharedModels.HistorialMedico>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AntecedentesPatologicosPersonales)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AntecedentesNOPatologicosPersonales)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AntecedentesPatologicosPersonales)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AntecedentesNOPatologicosPersonales)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.HistorialMedicoID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.HistorialMedicoID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.HistorialMedicoID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

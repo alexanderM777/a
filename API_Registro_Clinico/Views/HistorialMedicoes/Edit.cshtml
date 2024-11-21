@@ -1,0 +1,44 @@
+﻿@model SharedModels.HistorialMedico
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>HistorialMedico</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="HistorialMedicoID" />
+            <div class="form-group">
+                <label asp-for="PacienteID" class="control-label"></label>
+                <input asp-for="PacienteID" class="form-control" />
+                <span asp-validation-for="PacienteID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AntecedentesPatologicosPersonales" class="control-label"></label>
+                <input asp-for="AntecedentesPatologicosPersonales" class="form-control" />
+                <span asp-validation-for="AntecedentesPatologicosPersonales" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AntecedentesNOPatologicosPersonales" class="control-label"></label>
+                <input asp-for="AntecedentesNOPatologicosPersonales" class="form-control" />
+                <span asp-validation-for="AntecedentesNOPatologicosPersonales" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
